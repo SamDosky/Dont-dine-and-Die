@@ -1,0 +1,43 @@
+.wsie-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto 100px 400px 100px auto;
+  grid-auto-rows: 2fr 1fr 1fr;
+  grid-template-areas: 
+  '. header header header .'
+  '. random-restaurant random-restaurant random-restaurant .'
+  '. random-restaurant random-restaurant random-restaurant .'
+  '. . front-page-button . .';
+}
+
+.header {
+  grid-area: header;
+  align-self: end;
+  margin: 30px;
+  font-size: 4em;
+  font-family: 'Playfair Display', serif;
+  text-shadow: black 5px 5px 15px;
+}
+
+.random-restaurant {
+  grid-area: random-restaurant;
+  align-self: center;
+}
+
+.front-page-button {
+  grid-area: front-page-button;
+  margin-top: 30px;
+  height: 20px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 3%;  
+  left: 50%; 
+  transform: translate(-50%, 50%);
+  height: 1.5em;
+  width: 600px;
+  color: white;
+  text-shadow: none;
+  text-align: center;
+}
